@@ -21,8 +21,6 @@ final class ViewPresenter {
     func filterByPrice() {
         products.sort(by: { $0.price > $1.price })
         controller?.collectionViewContainer.reloadData()
-        print(controller != nil)
-        print(products)
     }
      
     func fetchProducts(page: Int ,pageSize: Int)  {
